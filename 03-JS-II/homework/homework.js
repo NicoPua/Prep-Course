@@ -170,7 +170,7 @@ function esPrimo(numero) {
   // Nota: Los números 0 y 1 NO son considerados números primos
   var i, Resultado, cont = 0;;
 
-  for (i =numero; i > 0 ;i++) {
+  for (i = numero; i > 0 ;i--) {
     Resultado = numero % i; 
     if(Resultado == 0){
       cont++;
