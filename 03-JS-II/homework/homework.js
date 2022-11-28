@@ -47,14 +47,12 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-  if (idioma === 'aleman'){
+  if (idioma == 'aleman'){
     return "Guten Tag!";
-  } else if(idioma === 'mandarin'){
+  } else if(idioma == 'mandarin'){
     return "Ni Hao!";  
-  } else if(idioma === 'ingles'){
+  } else if(idioma == 'ingles'){
     return "Hello!";
-  } else if(idioma === undefined){
-    return "Hola!";
   } else {
     return "Hola!";
   }
@@ -203,10 +201,10 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
   var Resultado;
-  const tabla=[0,0,0,0,0,0,0,0,0,0];
+  const tabla=[0,0,0,0,0,0,0,0,0,0,0];
   
-  for (i = 0; i < 10 ; i++) {
-    Resultado = 6 * (i+1);
+  for (i = 0; i < 11 ; i++) {
+    Resultado = 6 * i;
     Resultado = tabla[i];
   }
   return tabla;
