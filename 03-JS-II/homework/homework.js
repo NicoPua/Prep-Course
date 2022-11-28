@@ -32,11 +32,11 @@ function conection(status) {
   //De lo contrario, presumimos que el usuario está "Offline"
   //Devolver el estado de conexión de usuario en cada uno de los casos.
   if (status === 1){
-    return status;      //Online
+    return 'Online';      //Online
   } else if (status === 2){
-    return status;      //Away
+    return 'Away';      //Away
   } else {
-    return status;      //Offline
+    return 'Offline';      //Offline
   }
 }
 
@@ -200,11 +200,11 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  var Resultado;
-  const tabla=[0,0,0,0,0,0,0,0,0,0,0];
+  var Resultado,i;
+  const tabla=[0,0,0,0,0,0,0,0,0,0];
   
-  for (i = 0; i < 11 ; i++) {
-    Resultado = 6 * i;
+  for (i = 0; i < 10 ; i++) {
+    Resultado = 6 * (i+1);
     Resultado = tabla[i];
   }
   return tabla;
