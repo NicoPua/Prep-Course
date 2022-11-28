@@ -146,17 +146,17 @@ function operadoresLogicos(num1, num2, num3) {
   if (num1 < 0 || num2 < 0 || num3 < 0){
     text1 = "Hay negativos";
     return text1;
+  } else if (num1 == 0 || num2 == 0 || num3 == 0){
+      text1 = "Error";
+      return text1;
   } else if (num1 > num2 && num1 > num3 && num1 > 0){
-    text1 = "Número 1 es mayor y positivo";
-    return text1;
+      text1 = "Número 1 es mayor y positivo";
+      return text1;
   } else if (num3 > num1 && num3 > num2){    
-    suma = num3 + 1;
-    return suma;
-  }else if (num1 == 0 || num2 == 0 || num3 == 0){
-    text1 = "Error";
-    return text1;
+      suma = num3 + 1;
+      return suma;
   } else {
-    return false;
+      return false;
   }
 }
 
@@ -200,12 +200,20 @@ function tablaDelSeis(){
   //Escribe una función que muestre la tabla de multiplicar del 6 (del 0 al 60).
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
-  var Resultado,i;
-  const tabla=[0,0,0,0,0,0,0,0,0,0];
+  
+  /*
+  var Resultado,i;                      //PREGUNTAR PORQUÉ NO FUNCIONA
+  let tabla=[0,0,0,0,0,0,0,0,0,0];
   
   for (i = 0; i < 10 ; i++) {
     Resultado = 6 * (i+1);
     Resultado = tabla[i];
+  }
+  return tabla;*/
+
+  let i,tabla = [];
+  for (i = 0; i < 11; i++) {
+        tabla.push(6 * i)
   }
   return tabla;
 }
@@ -225,10 +233,11 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  var cont=1,Resultado;
-  const Suma = [0,0,0,0,0,0,0,0]
+  
+  /*var cont=1,Resultado;
+  let Suma = [0,0,0,0,0,0,0,0]
 
-  while (cont < 9) {
+  while (cont < 9) {                //PREGUNTAR PORQUÉ NO FUNCIONA.
     Suma[0] = numero + 5;
     Resultado = Suma [cont-1];
     Suma [cont] = Resultado + 5;
@@ -237,8 +246,16 @@ function doWhile(numero) {
       return Suma; 
     }
     cont++;
-  }
+  }*/
 
+  var Resultado = numero;
+  var i = 0;
+  do {
+    i++;
+    Resultado = Resultado + 5;
+  }
+  while(i < 8);
+  return Resultado;
 }
 
 
