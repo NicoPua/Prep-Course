@@ -2,19 +2,24 @@
 
 function devolverPrimerElemento(array) {
   // Devuelve el primer elemento de un  array (pasado por parametro)
-  // Tu código:
+  // Tu código: 
+  return array[0];
 }
 
 
 function devolverUltimoElemento(array) {
   // Devuelve el último elemento de un array
   // Tu código:
+  var ultimo;
+  ultimo = array.length;
+  return array [ultimo];
 }
 
 
 function obtenerLargoDelArray(array) {
   // Devuelve el largo de un array
   // Tu código:
+  return array.length;
 }
 
 
@@ -23,6 +28,13 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  var long, resultado = [];
+  long = array.length;
+  
+  for (let i = 0; i < long; i++) {
+     resultado [i] = array[i] + 1;
+  }
+  return resultado;
 }
 
 
@@ -30,6 +42,7 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
+  return array.push(elemento);
 }
 
 
@@ -38,6 +51,7 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
+  return array.unshift(elemento);
 }
 
 
@@ -47,6 +61,18 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
+  var Text1, long = palabras.length, guardado = [];
+  
+  guardado [0] = palabras [0];
+  if (long == 1) {
+    return guardado[0]; 
+  }else{
+    for (i = 1; i <= long; i++) {
+      guardado [i] = guardado [i-1] + ' ' + palabras [i];
+    }
+     Text1 = guardado[long];
+    return Text1;
+  }
 }
 
 
