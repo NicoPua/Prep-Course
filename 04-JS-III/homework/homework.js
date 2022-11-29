@@ -12,7 +12,7 @@ function devolverUltimoElemento(array) {
   // Tu código:
   var ultimo;
   ultimo = array.length;
-  return array [ultimo];
+  return array[ultimo-1];
 }
 
 
@@ -42,7 +42,8 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
   // y devuelve el array
   // Tu código:
-  return array.push(elemento);
+  array.push(elemento);
+  return array;
 }
 
 
@@ -51,7 +52,8 @@ function agregarItemAlComienzoDelArray(array, elemento) {
   // y devuelve el array
   // Pista: usa el método `.unshift`
   // Tu código:
-  return array.unshift(elemento);
+  array.unshift(elemento);
+  return array;
 }
 
 
@@ -61,18 +63,9 @@ function dePalabrasAFrase(palabras) {
   // con espacios entre cada palabra
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
-  var Text1, long = palabras.length, guardado = [];
+  array.join(' ');
+  return array;
   
-  guardado [0] = palabras [0];
-  if (long == 1) {
-    return guardado[0]; 
-  }else{
-    for (i = 1; i <= long; i++) {
-      guardado [i] = guardado [i-1] + ' ' + palabras [i];
-    }
-     Text1 = guardado[long];
-    return Text1;
-  }
 }
 
 
