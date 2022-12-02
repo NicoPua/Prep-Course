@@ -11,9 +11,9 @@ function crearGato (nombre, edad) {
     nombre: nombre,
     edad: edad,
     meow: function() {
-        return 'Meuw!';
+        return 'Meow!';
     }
-  }
+  };
   return Gato;
 }
 
@@ -50,6 +50,7 @@ function eliminarPropiedad (objeto, unaPropiedad) {
   // Devuelve el objeto
   // Tu código:
   delete objeto[unaPropiedad];
+  return objeto;
 }
 
 function nuevoUsuario (nombre, email, password) {
@@ -82,7 +83,7 @@ function tienePropiedad (objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
-  if (objeto[propiedad] === 'propiedad') {
+  if (objeto[propiedad]) {
     return true;
   } else {
     return false;
@@ -155,11 +156,14 @@ function agregarMetodoCalculoDescuento (producto) {
   // producto.porcentajeDeDescuento -> 0.2 (o simplemente ".2")
   // producto.calcularPrecioDescuento() -> 20 - (20 * 0.2)
   // Tu código:
+  
   producto.calcularPrecioDescuento = function () {
-    descuento = (producto.precio * producto.porcentajeDeDescuento)/100; 
-    resultado = precio - descuento;
-    return producto;
+    var descuento, resultado;
+    descuento = this.precio * this.porcentajeDeDescuento; 
+    resultado = this.precio - descuento;
+    return resultado;
   }
+  return producto;
 }
 
 // No modificar nada debajo de esta línea
