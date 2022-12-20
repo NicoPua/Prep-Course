@@ -54,15 +54,10 @@ archivo en cualquiera de estas carpetas, estás en el lugar equivocado.
 
 
 /* Ejercicio 7. */
-#elementoUno{
-    
-}
+
 #elementoDos{
     align-self: center;
 }
 #elementoTres{
     align-self: flex-end;
-}
-#elementoCuatro{
-
 }
