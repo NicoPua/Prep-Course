@@ -5,19 +5,46 @@ html{
 
 h1{
     color: slateblue;
+    display: flex;
+    justify-content: center;
+}
+h3{
+    display: flex;
+    justify-content: center;
+}
+h4{
+    display: flex;
+    justify-content: center;
 }
 img{
-    width: 400px;
+    width: 200px;
 }
+
+span{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    display: flex;
+    justify-content: center;
+}
+
 #thirdDiv{
+    position: relative;
+    left: 350;
+
+    display: flex;
+    justify-content: center;
+
     height: 600px;
     width: 500px;
     background: rosybrown;
     padding: 50px;
     border: 10px solid aquamarine;
 }
+
 #spanId{
     font-size: 18px;
     margin: 50px;
-    
 }
