@@ -10,6 +10,23 @@ function deObjetoAmatriz(objeto){
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+    var matriz = [], array2 =[];
+
+    var res1 = Object.keys(objeto);       //Creo un Array de propiedes del objeto.
+    var res2 = Object.values(objeto);     //Creo un Array de valores del objeto.
+
+    for (let i = 0; i < res1.length; i++) {
+      array2 = [];
+      for (let j = 0; j < 2; j++) {
+        if (j == 0) {                     
+          array2[j] = res1[i];             // [ ['D', ],['B', ],['C', ] ]   Agrego las propiedades del objeto.
+        }else{
+          array2[j] = res2[i];             // [ ['D',1],['B',2],['C',3] ]   Agrego los valores del objeto.
+        }
+      }
+      matriz[i] = array2;
+    }
+    return matriz;
 }
 
 
