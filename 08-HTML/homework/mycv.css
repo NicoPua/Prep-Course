@@ -1,0 +1,25 @@
+#encabezado{
+    display: flex;
+    justify-content: center;
+    background-color: darkkhaki;
+}
+
+h2{
+    position: relative;
+    left: 25px;
+    text-decoration: underline;
+}
+
+p{
+    position: relative;
+    left: 25px;
+    width: 60%;
+    text-align: justify;
+}
+
+img{
+    position: relative;
+    left: 25px;
+    width: 600px;
+    height: 300px;
+}
